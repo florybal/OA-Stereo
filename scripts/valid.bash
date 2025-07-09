@@ -1,0 +1,14 @@
+python valid.py \
+--valid_sets dave_sonar \
+--border 30 \
+--device cuda:0 \
+--valid_multipath_shift 0 \
+--valid_noise_level 0.0 \
+--valid_contrast_coff 1.0 \
+--valid_blur_sigma 0.0 \
+--valid_occlusion 0.0 \
+--valid_fx_distortion 0.0 \
+--valid_displacement 0.0 \
+--valid_fls_movement 0.0 0.0 0.0 \
+--use_flsvolume \
+--weight_stereo weights/oa_stereo.pth

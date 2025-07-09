@@ -1,0 +1,14 @@
+python show.py \
+-l=datasets/dave_sonar/scene4/cam_left/0000000000000.jpg \
+-r=datasets/dave_sonar/scene4/cam_right/0000000000000.jpg \
+-s=datasets/dave_sonar/scene4/sonar/0000000000000.npy \
+--cam_left_yaml datasets/dave_sonar/scene4/cam_left.yaml \
+--cam_right_yaml datasets/dave_sonar/scene4/cam_right.yaml \
+--fls_yaml datasets/dave_sonar/scene4/sonar.yaml \
+--fls_compensation 0 \
+--fls_normalization 1 \
+--use_flsvolume \
+--update_iters 3 \
+--weight_stereo weights/oa_stereo.pth \
+--device cuda:0 \
+--no_compile 

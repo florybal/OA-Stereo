@@ -1,0 +1,14 @@
+python train.py \
+--name exp_name \
+--train_sets dave_sonar_1_2_3_4_x1 \
+--learning_rate 2e-4 \
+--image_size 384 512 \
+--train_step 50000 \
+--valid_period 10 \
+--device cuda:0 \
+--batch_size 10 \
+--border 10 \
+--loss_weights 1.0 0.1 0.001 0.01 \
+--use_flsloss \
+--use_flsvolume \
+--no_compile
