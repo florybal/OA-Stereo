@@ -102,4 +102,4 @@ A custom dataset collected based on the [DAVE project](https://github.com/Field-
 
 ## Acknowledgments
 
-Part of the code is adopted from previous works:[SAFT-Stereo](https://github.com/c237814486/SAFT-Stereo), [CoEx](https://github.com/antabangun/coex), [RAFT-Stereo](https://github.com/princeton-vl/RAFT-Stereo), [UWStereo](https://github.com/kskin/UWStereo), [Monodepth2](https://github.com/nianticlabs/monodepth2)
+Part of the code is adopted from previous works: [SAFT-Stereo](https://github.com/c237814486/SAFT-Stereo), [CoEx](https://github.com/antabangun/coex), [RAFT-Stereo](https://github.com/princeton-vl/RAFT-Stereo), [UWStereo](https://github.com/kskin/UWStereo), [Monodepth2](https://github.com/nianticlabs/monodepth2)
