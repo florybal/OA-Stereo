@@ -1,5 +1,13 @@
 # OA-Stereo: Self-Supervised Opti-Acoustic Stereo for Robust 3D Perception of Underwater Vehicles
 
+## Introduction
+<div align="center">
+    <img alt="image" src="https://github.com/user-attachments/assets/4fb909c1-7422-42fa-97be-db6e206e38c0" width="100%" />
+    <img alt="fe6a041d-5944-4b96-96a0-88960a2c020e" src="https://github.com/user-attachments/assets/adf04fa7-bce6-470f-bb91-29fc7798c5ad" width="50%" />
+</div>
+
+Accurate 3D perception is essential for underwater vehicles in tasks such as seabed mapping, structural reconstruction, and environmental monitoring. However, optical cameras struggle in underwater environments due to light attenuation, scattering, and blurring, while forward-looking sonar suffers from both acoustic noise and lack of elevation angle. Existing methods exploring opti-acoustic stereo imaging predominantly rely on cross-modal matching, yet they remain constrained by sparse reconstruction and exhibit low robustness. To address these limitations, we propose OA-Stereo, a novel self-supervised opti-acoustic stereo framework that integrates calibrated optical and acoustic images for dense depth map estimation, enabling robust 3D perception under adverse optical, acoustic, and calibration conditions. Our key contributions include: (1) OA-StereoNet, a novel architecture that iteratively refines disparity estimation through fusion of optical and acoustic lookup information; and (2) SIGC Loss, a cross-modal self-supervised loss that improves training by promoting consistency between reconstructed and observed sonar images. Extensive experiments conducted on both simulated and real-world underwater datasets demonstrate that OA-Stereo achieves state-of-the-art accuracy and stability under degraded visual conditions, sonar noise, and extrinsic calibration errors.
+
 ## Software Architecture
 * scripts: Scripts for running various training/visualization tasks.
 * src: Core source code, including network architecture, datasets, loss functions, and general utility code.
@@ -94,4 +102,4 @@ A custom dataset collected based on the [DAVE project](https://github.com/Field-
 
 ## Acknowledgments
 
-Part of the code is adopted from previous works: [CoEx](https://github.com/antabangun/coex), [RAFT-Stereo](https://github.com/princeton-vl/RAFT-Stereo), [UWStereo](https://github.com/kskin/UWStereo), [Monodepth2](https://github.com/nianticlabs/monodepth2)
+Part of the code is adopted from previous works:[SAFT-Stereo](https://github.com/c237814486/SAFT-Stereo), [CoEx](https://github.com/antabangun/coex), [RAFT-Stereo](https://github.com/princeton-vl/RAFT-Stereo), [UWStereo](https://github.com/kskin/UWStereo), [Monodepth2](https://github.com/nianticlabs/monodepth2)
