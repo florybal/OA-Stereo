@@ -1,0 +1,23 @@
+name: oastereo
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch-nightly
+  - defaults
+
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - tqdm
+  - scikit-learn
+  - pyyaml
+  - open3d
+  - tensorboard
+  - pip
+  - pip:
+      - torch==2.10.0.dev20251014+cu128
+      - torchvision==0.25.0.dev20251015+cu128
+      - torchaudio==2.8.0.dev20251015+cu128
